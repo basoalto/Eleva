@@ -1,6 +1,5 @@
 <template>
 
-
   <div>
     <Header/>
      <div class="container">
@@ -20,9 +19,9 @@
             <input type="text" class="form-control" name="nombre" id="nombre" v-model="form.ingredientes">
            </div>
          </div>
-
       </form>
-            <form action="" class="form-horizontal">
+
+      <form action="" class="form-horizontal">
          <div class="form-group left">
            <label for="" class="control-label col-sm-2" >Calorias</label>
            <div>
@@ -32,11 +31,9 @@
       </form>
             
       <div action="" class="form-group">
-
        <button type="button" class="btn btn-primary" v-on:click="editar()">Editar</button>
        <button type="button" class="btn btn-danger margen">Eliminar</button>
        <button type="button" class="btn btn-dark margen">Salir</button>
-      
       </div>
 
      </div>
@@ -61,12 +58,12 @@ export default {
           "id": null,
           "nombre": "",
           "ingredientes": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
           ],
           "calorias": null
         }
@@ -99,4 +96,5 @@ export default {
 .left{
   text-align: left;
 }
+
 </style>
