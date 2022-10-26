@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Dash from '../views/Dash.vue'
+import Editar from '../views/Editar.vue';
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -14,6 +16,11 @@ const routes = [
     path: '/dash',
     name: 'Dash',
     component: Dash
+  },
+  {
+    path: '/editar/:id',
+    name: 'Editar',
+    component: Editar
   }
 ]
 
