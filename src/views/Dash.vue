@@ -18,8 +18,6 @@
         <td>{{hamburguesas.nombre}}</td>
         <label v-for="ingredientes in hamburguesas.ingredientes">{{ingredientes}}</label>
         <td>{{hamburguesas.calorias}}</td>
-        
-
       </tr>
     </tbody>
   </table>
