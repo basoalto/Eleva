@@ -32,8 +32,8 @@
             
       <div action="" class="form-group">
        <button type="button" class="btn btn-primary" v-on:click="editar()">Editar</button>
-       <button type="button" class="btn btn-danger margen">Eliminar</button>
-       <button type="button" class="btn btn-dark margen">Salir</button>
+       <button type="button" class="btn btn-danger margen"  v-on:click="eliminar()">Eliminar</button>
+       <button type="button" class="btn btn-dark margen" v-on:click="salir()">Salir</button>
       </div>
 
      </div>
@@ -45,7 +45,8 @@
 <script>
 import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
-import axios from 'axios';
+import axios from 'axios'; 
+ 
 export default {
     name: "Editar",
     components:{
@@ -75,6 +76,9 @@ export default {
         .then(dat =>{ 
           console.log(dat)
         })
+      },
+      salir(){
+        this.$router.push("/dash")
       }
     },
     mounted: function(){
