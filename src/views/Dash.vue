@@ -36,19 +36,13 @@
       <div class="form-group">
         <input type="text" v-model="hamburguesa.calorias" class="form-control" placeholder="calorias" minlenght="10" maxlenght="50" required/>
       </div>
-      <button type="submit" class="btn btn-primary">Editar</button>
-      <button type="reset" class="btn btn-secondary">Eliminar</button>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+      <button type="reset" class="btn btn-secondary">Restablecer</button>
     </form>
  
   </div>
-
-
-
-
-
   <Footer/>
 </div>
-
 
 </template>
 
@@ -105,7 +99,7 @@ name: 'Dash',
       this.listahamburguesas = data.data;
       this.UpdateLocalStorage()
       })
-//Locando el foco al Nombre, al renderizar la pagina
+//foco del Nombre, al renderizar la pagina
      },
     UpdateLocalStorage: function(){
       localStorage.setItem('hamburguesas', JSON.stringify(this.listahamburguesas))
