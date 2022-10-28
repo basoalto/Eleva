@@ -40,7 +40,7 @@
         <input type="submit" class="btn btn-success btn-block text-dark" v-bind:value="Operation"/>
       </div>
       <div class="form-group">
-        <input type="reset" class="btn btn-success btn-block text-block" value="clear"/>
+        <input type="reset" class="btn btn-primary btn-block text-block" value="clear"/>
       </div>
   </form>
  
